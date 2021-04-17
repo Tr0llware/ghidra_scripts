@@ -9,7 +9,7 @@
 
 from ghidra.program.util import DefinedDataIterator
 from ghidra.program.model.data import StringDataInstance
-#TODO: do I need this?
+
 
 from ghidra.program.model.symbol import RefType
 

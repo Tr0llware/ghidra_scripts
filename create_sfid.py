@@ -81,15 +81,8 @@ def main():
 	else:
 		filename = askFile("Choose file to save signatures", "OK").getAbsolutePath()
 	old_sigs = load_sigs(filename)
-	print("reading old sigs...")
-	print(old_sigs)
 	old_sigs["functions"].update(sigs["functions"])
 	old_sigs["strings"].update(sigs["functions"])
-	print("new sigs are:")
-	print(sigs)
-	print("updating sigs...")
-	print("sigs are now:")
-	print(old_sigs)
 	write_sigs_to_json_file(old_sigs, filename)
 		
 if __name__ == "__main__":
